@@ -1,9 +1,21 @@
 {
     "name": "vscode-xcolor",
-    "displayName": "vscode-xcolor",
+    "displayName": "xcolor",
     "description": "Integration of xcolor into the VSCode editor",
-    "version": "0.0.1",
-    "publisher": "rgerecke",
+    "version": "0.1.1",
+    "author": {
+        "name": "Reiner Gerecke"
+    },
+    "publisher": "squiddy",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/squiddy/vscode-xcolor.git"
+    },
+    "homepage": "https://github.com/squiddy/vscode-xcolor",
+    "bugs": {
+        "url": "https://github.com/squiddy/vscode-xcolor/issues"
+    },
+    "license": "SEE LICENSE",
     "engines": {
         "vscode": "^1.22.0"
     },
@@ -11,14 +23,16 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.pickScreenColor"
     ],
     "main": "./out/extension",
     "contributes": {
-        "commands": [{
-            "command": "extension.sayHello",
-            "title": "Hello World"
-        }]
+        "commands": [
+            {
+                "command": "extension.pickScreenColor",
+                "title": "Pick color from screen"
+            }
+        ]
     },
     "scripts": {
         "vscode:prepublish": "npm run compile",
@@ -28,10 +42,11 @@
         "test": "npm run compile && node ./node_modules/vscode/bin/test"
     },
     "devDependencies": {
+        "@types/mocha": "^2.2.42",
+        "@types/node": "^7.0.43",
+        "tslint": "^5.8.0",
         "typescript": "^2.6.1",
         "vscode": "^1.1.6",
-        "tslint": "^5.8.0",
-        "@types/node": "^7.0.43",
-        "@types/mocha": "^2.2.42"
+        "vsce": "^1.39.0"
     }
 }
