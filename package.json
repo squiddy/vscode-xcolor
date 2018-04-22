@@ -2,7 +2,7 @@
     "name": "vscode-xcolor",
     "displayName": "xcolor",
     "description": "Integration of xcolor into the VSCode editor",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "author": {
         "name": "Reiner Gerecke"
     },
