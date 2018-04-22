@@ -1,6 +1,7 @@
 # vscode-xcolor
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Visual Studio Marketplace](https://img.shields.io/vscode-marketplace/v/squiddy.vscode-xcolor.svg)](https://marketplace.visualstudio.com/items?itemName=squiddy.vscode-xcolor)
 
 Pick any color on the screen and have the hexadecimal representation insert
 into the currently active editor. This is a thin wrapper around the
